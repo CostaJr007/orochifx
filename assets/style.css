@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: #363945;
+    overflow-x: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 20px;
+}
+
+header > div {
+    justify-content: space-between;
+
+    height: 40px;
+    padding: 10px;
+    background-color: #212121;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header .logo {
+    background-image: url('images/logotipo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partner {
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.partner .logo {
+    background-image: url('images/partner-icmarkets-header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partner span {
+    color: #efefef;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main {
+    padding: 0 60px;
+    min-height: 100vh;
+    line-height: 1.5;
+
+    background-color: #212121;
+}
+
+.banner {
+    justify-content: center;
+    gap: 25px;
+
+    height: calc(100vh - 60px);
+    color: #efefef;
+}
+
+.banner .logo {
+    width: 98.50px;
+    height: 85px;
+
+    background-image: url('images/logotipo-snake-colored.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner h1,
+.banner h4
+{
+    text-align: center;
+}
+
+span a {
+    border-bottom: 2px solid #4504ba;
+    padding-bottom: 4px;
+    color: #1ce94e;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5c5d94;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.buttons a:hover {
+    color: #e0e0e0;
+    background-color: #6a6ba8;
+}
+
+.buttons a.no-background {
+    color: #e0e0e0;
+    background-color: transparent;
+}
+
+.buttons a.no-background:hover {
+    background-color: #6a6ba8;
+}
+
+.indicators {
+    padding: 15px 0 20px 0;
+    gap: 10px;
+
+    background-color: #e0e0e0;
+}
+
+.indicators div {
+    gap: 10px;
+}
+
+.horus .image {
+    width: 175px;
+    height: 140px;
+
+    background-image: url('images/olho-de-horus.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sharingan .image {
+    width: 150px;
+    height: 140px;
+
+    background-image: url('images/mangekyou-sharingan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.testimonial {
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+
+    border-top: 1px solid #cccccc;
+    background-color: rgba(236, 238, 241, 1);
+}
+
+.testimonial .client {
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 0 7px;
+}
+
+.testimonial .client div {
+    align-items: center;
+    gap: 5px;
+}
+
+.testimonial span {
+    width: 72px;
+    text-align: center;
+}
+
+.testimonial h2,
+.testimonial p,
+.testimonial span
+{
+    color: #a8b0bb;
+}
+
+.testimonial .image {
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid #a8b0bb;
+    border-radius: 50px;
+
+    background-image: url('images/clients/sem-foto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section .partner {
+    display: none;
+}
+
+section .partner .logo {
+    background-image: url('images/partner-icmarkets-section.png');
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    padding: 5px 20px 0 10px;
+    background-color: #212121;
+    color: #c4c4c4;
+}
+
+footer .logo {
+    background-image: url('images/logotipo-footer.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 960px) {
+    header > div,
+    footer {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        width: min-content;
+    }
+
+    .buttons,
+    .testimonial {
+        flex-wrap: wrap;
+    }
+
+    .testimonial .client {
+        justify-content: space-between;
+        padding: 7px 0;
+    }
+
+    footer {
+        padding-bottom: 5px;
+    }
+
+    header .partner {
+        display: none;
+    }
+
+    section .partner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .partner span {
+        color: unset;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
