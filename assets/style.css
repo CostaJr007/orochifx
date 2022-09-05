@@ -160,17 +160,13 @@ span a {
 }
 
 .buttons a:hover {
-    color: #e0e0e0;
-    background-color: #6a6ba8;
+    border: 2px solid #d1d1d1;
+    background-color: #d1d1d1;
 }
 
 .buttons a.no-background {
     color: #e0e0e0;
     background-color: transparent;
-}
-
-.buttons a.no-background:hover {
-    background-color: #6a6ba8;
 }
 
 section .banner-square {
