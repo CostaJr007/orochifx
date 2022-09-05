@@ -35,7 +35,7 @@ body {
 }
 
 .gap-10 {
-    gap: 20px;
+    gap: 10px;
 }
 
 header > div {
@@ -63,7 +63,6 @@ header .logo {
 
 .partner {
     margin-right: 10px;
-    gap: 10px;
 }
 
 .partner .logo {
@@ -141,7 +140,6 @@ span a {
 
 .buttons {
     display: flex;
-    gap: 10px;
 }
 
 .buttons a {
@@ -177,14 +175,13 @@ span a {
 
 .indicators {
     padding: 15px 0 20px 0;
-    gap: 10px;
 
     background-color: #e0e0e0;
 }
 
-.indicators div {
+/*.indicators div {
     gap: 10px;
-}
+}*/
 
 .horus .image {
     width: 175px;
@@ -209,7 +206,6 @@ span a {
 .testimonial {
     justify-content: space-between;
     padding: 10px;
-    gap: 5px;
 
     border-top: 1px solid #cccccc;
     background-color: rgba(236, 238, 241, 1);
@@ -217,13 +213,11 @@ span a {
 
 .testimonial .client {
     justify-content: flex-end;
-    gap: 5px;
     padding: 0 7px;
 }
 
 .testimonial .client div {
     align-items: center;
-    gap: 5px;
 }
 
 .testimonial span {
@@ -259,6 +253,15 @@ section .partner .logo {
     background-image: url('images/partner-icmarkets-section.png');
 }
 
+section .promo {
+    height: 250px;
+
+    background-color: black;
+    background-image: url('https://promo.icmarkets.com/GIFs/2022/Indices-FSA-PT/970x250_Indices_FSA_PT.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -284,6 +287,10 @@ footer .logo {
         justify-content: center;
     }
 
+    header .partner {
+        display: none;
+    }
+
     h1 {
         font-size: 35px;
     }
@@ -306,12 +313,9 @@ footer .logo {
         padding: 7px 0;
     }
 
-    footer {
-        padding-bottom: 5px;
-    }
-
-    header .partner {
-        display: none;
+    section .promo {
+        height: 600px;
+        background-image: url('https://promo.icmarkets.com/Banners/2021/Portuguese/PT_300x600_Partners_FSA.jpg');
     }
 
     section .partner {
@@ -321,6 +325,10 @@ footer .logo {
 
     .partner span {
         color: unset;
+    }
+
+    footer {
+        padding-bottom: 5px;
     }
 }
 
