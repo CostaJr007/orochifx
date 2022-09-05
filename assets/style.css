@@ -43,7 +43,7 @@ header > div {
 
     height: 40px;
     padding: 10px;
-    background-color: #212121;
+    background-color: black;
 }
 
 .logo {
@@ -105,7 +105,7 @@ main {
     min-height: 100vh;
     line-height: 1.5;
 
-    background-color: #212121;
+    background-color: black;
 }
 
 .banner {
@@ -173,15 +173,23 @@ span a {
     background-color: #6a6ba8;
 }
 
-.indicators {
-    padding: 15px 0 20px 0;
+section .banner-square {
+    width: 300px;
+    height: 250px;
 
-    background-color: #e0e0e0;
+    background-image: url('images/icmarkets-square.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-/*.indicators div {
-    gap: 10px;
-}*/
+.indicators {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 15px 0 20px 0;
+    background-color: #e0e0e0;
+}
 
 .horus .image {
     width: 175px;
@@ -253,13 +261,14 @@ section .partner .logo {
     background-image: url('images/partner-icmarkets-section.png');
 }
 
-section .promo {
-    height: 250px;
+section .banner-large {
+    height: 90px;
 
     background-color: black;
-    background-image: url('https://promo.icmarkets.com/GIFs/2022/Indices-FSA-PT/970x250_Indices_FSA_PT.gif');
+    background-image: url('images/icmarkets.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 footer {
@@ -270,7 +279,7 @@ footer {
     gap: 5px;
 
     padding: 5px 20px 0 10px;
-    background-color: #212121;
+    background-color: black;
     color: #c4c4c4;
 }
 
@@ -313,9 +322,9 @@ footer .logo {
         padding: 7px 0;
     }
 
-    section .promo {
+    section .banner-large {
         height: 600px;
-        background-image: url('https://promo.icmarkets.com/Banners/2021/Portuguese/PT_300x600_Partners_FSA.jpg');
+        background-image: url('images/icmarkets-mobile-large.jpg');
     }
 
     section .partner {
