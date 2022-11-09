@@ -66,7 +66,7 @@ header .logo {
 }
 
 .partner .logo {
-    background-image: url('images/partner-icmarkets-header.png');
+    background-image: url('images/bdswiss-header.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -117,8 +117,8 @@ main {
 }
 
 .banner .logo {
-    width: 98.50px;
-    height: 85px;
+    width: 118.50px;
+    height: 105px;
 
     background-image: url('images/logotipo-snake-colored.png');
     background-position: center;
@@ -173,7 +173,7 @@ section .banner-square {
     width: 300px;
     height: 250px;
 
-    background-image: url('images/icmarkets-square.gif');
+    background-image: url('images/bdswiss-square.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -254,14 +254,14 @@ section .partner {
 }
 
 section .partner .logo {
-    background-image: url('images/partner-icmarkets-section.png');
+    background-image: url('images/partner-bdswiss-section.svg');
 }
 
 section .banner-large {
     height: 90px;
 
     background-color: black;
-    background-image: url('images/icmarkets.jpg');
+    background-image: url('images/bdswiss-large.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -309,7 +309,8 @@ footer .logo {
     }
 
     .buttons,
-    .testimonial {
+    .testimonial
+    {
         flex-wrap: wrap;
     }
 
@@ -319,8 +320,7 @@ footer .logo {
     }
 
     section .banner-large {
-        height: 600px;
-        background-image: url('images/icmarkets-mobile-large.jpg');
+        background-image: url('images/bdswiss-mobile.gif');
     }
 
     section .partner {
